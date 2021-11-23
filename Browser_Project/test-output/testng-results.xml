@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-11-23T16:40:02 IST" name="Suite1" finished-at="2021-11-23T16:40:48 IST" duration-ms="45964">
+    <groups>
+    </groups>
+    <test started-at="2021-11-23T16:40:02 IST" name="TestingOnChrome" finished-at="2021-11-23T16:40:47 IST" duration-ms="44790">
+      <class name="test.Cross_browser">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:test.Cross_browser@957e06]" started-at="2021-11-23T16:40:02 IST" name="setup" finished-at="2021-11-23T16:40:05 IST" duration-ms="3026" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test1()[pri:0, instance:test.Cross_browser@957e06]" started-at="2021-11-23T16:40:05 IST" name="test1" finished-at="2021-11-23T16:40:21 IST" duration-ms="16125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method signature="test2()[pri:0, instance:test.Cross_browser@957e06]" started-at="2021-11-23T16:40:21 IST" name="test2" finished-at="2021-11-23T16:40:46 IST" duration-ms="24772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:test.Cross_browser@957e06]" started-at="2021-11-23T16:40:46 IST" name="finish" finished-at="2021-11-23T16:40:47 IST" duration-ms="838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+      </class> <!-- test.Cross_browser -->
+    </test> <!-- TestingOnChrome -->
+    <test started-at="2021-11-23T16:40:02 IST" name="TestingOnEdge" finished-at="2021-11-23T16:40:48 IST" duration-ms="45964">
+      <class name="test.Cross_browser">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:test.Cross_browser@4a883b15]" started-at="2021-11-23T16:40:02 IST" name="setup" finished-at="2021-11-23T16:40:05 IST" duration-ms="3026" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test1()[pri:0, instance:test.Cross_browser@4a883b15]" started-at="2021-11-23T16:40:05 IST" name="test1" finished-at="2021-11-23T16:40:22 IST" duration-ms="17441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method signature="test2()[pri:0, instance:test.Cross_browser@4a883b15]" started-at="2021-11-23T16:40:22 IST" name="test2" finished-at="2021-11-23T16:40:46 IST" duration-ms="24098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:test.Cross_browser@4a883b15]" started-at="2021-11-23T16:40:46 IST" name="finish" finished-at="2021-11-23T16:40:48 IST" duration-ms="1375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+      </class> <!-- test.Cross_browser -->
+    </test> <!-- TestingOnEdge -->
+  </suite> <!-- Suite1 -->
+</testng-results>
