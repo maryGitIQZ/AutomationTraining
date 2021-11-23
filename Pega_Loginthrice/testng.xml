@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite1" thread-count="4" >
+<!-- Parallel Cross-browser testing is done here -->
+<test name="TestingOnChrome">
+<parameter name="browserCount" value="one"></parameter>
+<classes>
+<class name="loginthrice_package.Loginthrice"/>
+</classes>
+</test> 
+<test name="Logintwice">
+<parameter name="browserCount" value="two"></parameter>
+<classes>
+<class name="loginthrice_package.Loginthrice"/>
+</classes>
+</test> 
+<test name="Loginthird">
+<parameter name="browserCount" value="three"></parameter>
+<classes>
+<class name="loginthrice_package.Loginthrice"/>
+</classes>
+</test> 
+</suite>
