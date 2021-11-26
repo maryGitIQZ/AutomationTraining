@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Suite1]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="TestingOnFirebox(failed)">
+    <parameter name="browserName" value="firebox"/>
+    <classes>
+      <class name="wait_package.Media_icon">
+        <methods>
+          <include name="click_youtubeicon"/>
+          <include name="launch_app"/>
+          <include name="click_twitter"/>
+          <include name="click_facebook"/>
+          <include name="finish"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- wait_package.Media_icon -->
+    </classes>
+  </test> <!-- TestingOnFirebox(failed) -->
+  <test thread-count="3" parallel="tests" name="TestingOnChrome(failed)">
+    <parameter name="browserName" value="Chrome"/>
+    <classes>
+      <class name="wait_package.Media_icon">
+        <methods>
+          <include name="click_youtubeicon"/>
+          <include name="launch_app"/>
+          <include name="click_twitter"/>
+          <include name="click_facebook"/>
+          <include name="finish"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- wait_package.Media_icon -->
+    </classes>
+  </test> <!-- TestingOnChrome(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
