@@ -1,5 +1,7 @@
 package wait_package;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -34,7 +36,8 @@ public class Explicit_Wait {
 	}
 	@Test (dependsOnMethods = "launch_app")
 	public void enter_username() throws Exception {
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		/*WebDriverWait wait = new WebDriverWait(driver, 10);*/
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
     	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='txtUserID']")));
 		WebElement username = driver.findElement(By.xpath("//input[@id='txtUserID']"));
 	username.sendKeys("tcapron");
@@ -43,7 +46,8 @@ public class Explicit_Wait {
 	
 	@Test (dependsOnMethods = "enter_username")
 	public void enter_password() throws Exception {
-		WebDriverWait wait =new WebDriverWait(driver, 10);
+		/*WebDriverWait wait =new WebDriverWait(driver, 10);*/
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='txtPassword']")));
 	WebElement password = driver.findElement(By.xpath("//input[@id='txtPassword']"));
 	password.sendKeys("Password@123");
