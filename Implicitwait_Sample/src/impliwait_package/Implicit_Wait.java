@@ -1,5 +1,6 @@
 package impliwait_package;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -31,7 +32,8 @@ public class Implicit_Wait {
 	@Test
 	public void launch_app() throws Exception {
 	driver.get("https://pega-86-demo.iqzsystems.io/prweb/app/default/b0aUC_g2NnC90uEC3dhEbKXJdQTMkXeP*/!STANDARD");
-	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	/*driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);*/
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 	}
 	@Test (dependsOnMethods = "launch_app")
